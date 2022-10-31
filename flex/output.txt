@@ -1,0 +1,42 @@
+
+main function start end
+{
+ integer hi , hi2 ;
+ float hii , hii2 ;
+ char hiii , hiii2 ;
+ hi = got number : 10 ; 
+ hii = got number : 100.000000 ;
+ hii2 = hi + hii ;
+ hii2 = hi - hii ;
+ hii2 = hi / hii ;
+ hii2 = hi * hii ;
+ loop statement 
+ {
+ if statement hi == got number : 10 
+ {
+ display  syntex error number is got number : 10 syntex error  ;
+ }
+ else if statement hi == got number : 100
+ {
+ display  syntex error number is got number : 100 syntex error  ;
+ }
+ else statement
+ {
+ display  syntex error number not found syntex error  ;
+ }
+ hi = hi + got number : 10 ;
+ if statement hi == got number : 200
+ {
+ break loop
+ }
+ }
+ switch statement LB hii RB 
+ {
+ case statement LB got number : 10 RB :
+ display  syntex error number is got number : 10 syntex error  ;
+ default of switch-case :
+ display  syntex error not matched syntex error  ;
+ }
+ return got number : 0 ;
+}
+ 

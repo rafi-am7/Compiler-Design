@@ -1,0 +1,75 @@
+%{
+    #include<stdio.h>
+	#include<string.h>
+    #include<math.h>
+	#include<stdlib.h>
+%}
+
+single_line_comment "//".*
+multiple_line_comment [/][*][A-Za-z0-9. \n]*[*][/]
+User_Datatype "integer_j|"Float_j"|"Character_j"|"longj"
+variable "var_"[a-zA-Z]([a-zA-Z0-9])*
+logical_operator "&&"|"||"|"!!"
+
+%%  
+
+{single_line_comment} {
+	printf("This is single line comment\n");
+}
+{multiple_line_comment} {
+	printf("This is multiple line comment\n");
+}
+
+"#includee"		{}
+"main_f"	{printf("main function - main()");}
+"return_f"	{printf("return");}
+"int_f"		{printf("int");}
+"double_f"		{printf("double");}
+"float_f"		{printf("float");}
+"char_f"		{printf("char");}
+"string_f"		{printf("string");}
+"if_f"		{printf("if condition");}
+"not_if_f"		{printf("else condition");}
+"again_if_f"		{printf("else if condition");}
+"for_loop"		{printf("for loop");}
+"switch_f"		{printf("switch statement");}
+"case_f"		{printf("case condition");}
+"break_f"		{printf("break condition");}
+"default_f"		{printf("default condition");}
+"assign_f"		{printf("assign");}
+"post_inc"		{printf("post increment ++");}
+"post_dec"		{printf("post decrement --");}
+"pre_inc"		{printf("++ pre increment");}
+"pre_dec"		{printf("-- pre decrement");}
+"greater_f"		{printf("greater than operator <");}
+"less_f"		{printf("less than operator <");}
+"equal_f"		{printf("equals to check ==");}
+"not_equal_f"		{printf("not equals to check !=");}
+"greater_eq_f"		{printf("greater than equals to check <=");}
+"less_eq_f"		{printf("less than equals to check <=");}
+"fbs"		{printf("first bracket start (");}
+"fbe"		{printf("first bracket end )");}
+"sbs"		{printf("second bracket start {");}
+"sbe"		{printf("second bracket end }");}
+"add"		{printf("addition operator +");}
+"sub"		{printf("subtraction operator -");}
+"multi"		{printf("multi operator *");}
+"div"		{printf("division operator *");}
+"mod"		{printf("modulus operator %");}
+"pow_f"		{printf("pow function - pow(_,_)");}
+"cma"		{printf("comma - ,");}
+"scm"		{printf("semicolon - ;");}
+"show"		{printf("printf() function ");}
+[0-9]+ { 
+	int n = atoi(yytext);
+	printf("got number : %d", n);
+}
+{variable} { printf("variable found:  %s",yytext);}
+[a-zA-Z] {printf("%s", yytext);}
+
+%%
+
+int yywrap(){}
+int main(){
+   yylex();
+}
