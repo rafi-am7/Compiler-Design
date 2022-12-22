@@ -1,0 +1,71 @@
+void HORROR~> <~
+Begin
+int bpo, b , c , d , f ;
+float aa , py;
+int bpo,b=1;
+aa=22.2;
+py=2.2;
+bpo=3;
+int e=2;
+b=20;
+f=1;
+d=1;
+c=2;
+bpo+b-c*d/2;
+bpo+e;
+
+
+SWITCH ( bpo ) 
+	Begin
+	CASE 2 :
+		 DISPLAY( 21 );  
+	CASE 3 :
+		 DISPLAY( 20 );  
+        CASE 4 :
+		 DISPLAY( 22 );  
+        CASE 7 :
+		 DISPLAY( 23 );   
+	
+	DEFAULT :
+		 DISPLAY( 24 );
+	Finish
+
+
+loop ( 1 , 5 )
+	Begin
+	d=d * c
+	Finish
+loop ( 1 , 5 )
+	Begin
+	d=d + c
+	Finish
+2 + 2 ;
+
+While ( f < 6 ) 
+  Begin 
+      f=f + 2 
+  Finish 
+f=14;
+EITHER ( f == 13 )
+  Begin
+  	  f++ ;
+  Finish
+OR
+  Begin
+  	  f + 8 ;
+  Finish
+
+Even_Odd ~> 201 <~;
+sum ~> 1 , 7 <~;
+multiply ~> 4 , 6 <~;
+year ~>2021<~ ;
+palindrome~> 2002<~ ;
+TRIGO~>SIN(45)<~;
+factorial~>4<~;
+power~>4,2<~;
+prime~>97<~;
+Division~>10,0<~; 
+DISPLAY( 40 ); 
+DISPLAY(2.2 + 2.2); 
+aa! + py!;
+Finish

@@ -1,0 +1,79 @@
+bpo var is decalred successfully 
+b var is decalred successfully 
+c var is decalred successfully 
+d var is decalred successfully 
+f var is decalred successfully 
+
+...... Valid declaration...... 
+aa var is decalred successfully 
+py var is decalred successfully 
+
+...... Valid declaration...... 
+
+ bpo  var is declared! use another variable name 
+
+ b integer type var is declared! use another variable name 
+
+...... Valid declaration...... 
+
+ value of var aa=22.200001 
+
+ value of var py=2.200000 
+
+ value of var bpo=3 
+
+ value of var e=2
+
+...... Valid declaration...... 
+
+ value of var b=20 
+
+ value of var f=1 
+
+ value of var d=1 
+
+ value of var c=2 
+
+ Value of expression : 22 
+
+ Value of expression : 5 
+
+ value in switch:20
+value of the loop: 2
+value of the loop: 4
+value of the loop: 8
+value of the loop: 16
+value of the loop: 32
+value of the loop: 64
+value of the loop: 128
+value of the loop: 256
+value of the loop: 512
+value of the loop: 1024
+
+ Value of expression : 4 
+
+ Value of expression in WHILE BLOCK : 3
+
+ Value of expression in WHILE BLOCK : 5
+
+ Value of expression in WHILE BLOCK : 7
+
+ value of var f=14 
+
+ Value of expression in OR BLOCK : 22
+ 201 is an odd number 
+Summation from 1 to 7 is: 28
+Multiplication from 4 to 6 is: 120
+
+ 2021 is not a leap year 
+2002 is a palindrome.Sine of 45  degree is :0.707108 
+Factorial of 4 : 24
+4 ^ 2 = 16.000000
+97 is a prime number 
+
+ divide by 0	Print exp 40
+Print exp 4.400000
+
+ Value of expression : 24.400002 
+
+~~Successfully COMPILED~~
